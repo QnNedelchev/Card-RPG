@@ -1,0 +1,58 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <section class="info">
+                <p class="info-text">Let the game begin!</p>
+            </section>
+        <div class="game">
+            <section class="deck-area left">
+                <button id="draw1" class="draw-deck">DRAW DECK</button>
+                <div class="deck">
+                    <div class="row">
+                        <div class="deck-card user1"> 
+                        </div>
+                        <div class="deck-card user1"></div>
+                        <div class="deck-card user1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="deck-card user1"></div>
+                        <div class="deck-card user1"></div>
+                        <div class="deck-card user1"></div>               
+                    </div>
+                </div>
+            </section>
+            <main>
+                <div id="hero" class="empty">  
+                     <button id='add-card-btn1' class="addCard unactive">Choose</button>            
+                </div>
+                <div id="monster" class="empty">
+                    <button id='add-card-btn2' class="addCard unactive">Choose</button>   
+                </div>   
+            </main>
+            <section class="deck-area right">
+                <button id="draw2" class="draw-deck">DRAW DECK</button>
+                <div class="deck ">
+                    <div class="row">
+                        <div class="deck-card user2"></div>
+                        <div class="deck-card user2"></div>
+                        <div class="deck-card user2"></div>
+                    </div>
+                    <div class="row">
+                        <div class="deck-card user2"></div>
+                        <div class="deck-card user2"></div>
+                        <div class="deck-card user2"></div> 
+                    </div>              
+                </div>
+            </section>
+        </div>
+        <section id="actions">
+            <button id="attack-button" class="unactive hide">Attack</button>
+        </section> 
+        <script type="module" src="/index.js"></script>
+    </body>
+</html>
